@@ -1,13 +1,15 @@
 @import '../variables.scss';
 
 header {
-  width: 1440px;
-  height: 80px;
+  padding: 28px 103px 32px 117px;
   display: flex;
   justify-content: space-between;
+  font-family: $price-regular-font;
+  font-size: $header-font-size;
 }
 
 nav {
+
   ul {
     margin: 0;
     padding: 0;
@@ -20,7 +22,7 @@ nav {
 
   a {
     display: block;
-    padding: 6px 12px;
+    padding: 0 16px;
     text-decoration: none;
     color: $text-color;
   }
@@ -28,4 +30,22 @@ nav {
   a:hover {
     color: $primary-color;
   }
+}
+
+.cart_block {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+
+  .currency_icon {
+    display: flex;
+    justify-content: center;
+
+  }
+  .cart_icon {
+     img {
+    width: 20px;
+    height: 20px;}
+  }
+
 }

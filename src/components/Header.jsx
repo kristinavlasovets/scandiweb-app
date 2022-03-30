@@ -1,4 +1,6 @@
-import React from 'react';
+import React from "react";
+import logo from "../assets/img/logo.png";
+import cart from "../assets/img/cart.png";
 
 class Header extends React.Component {
   render() {
@@ -16,21 +18,23 @@ class Header extends React.Component {
               <a href="/kids">KIDS</a>
             </li>
           </ul>
-          <div className="logo">
-            <a href="/">
-              <img src="./assets/img/logo.png" alt="logo" />
-            </a>
-          </div>
+        </nav>
+        <div className="logo">
+          <a href="/">
+            <img src={logo} alt="logo" />
+          </a>
+        </div>
+        <div className="cart_block">
           <div className="currency_icon">
             <p>$</p>
-            <button>v</button>
+            <a href="#">v</a>
           </div>
           <div className="cart_icon">
             <a href="/cart">
-              <img src="./assets/img/logo.png" alt="cart" />
+              <img src={cart} alt="cart" />
             </a>
           </div>
-        </nav>
+        </div>
       </header>
     );
   }
