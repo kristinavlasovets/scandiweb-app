@@ -1,7 +1,7 @@
 @import '../variables.scss';
 
 header {
-  padding: 28px 103px 32px 117px;
+  padding: 28px 103px 0 117px;
   display: flex;
   justify-content: space-between;
   font-family: $price-regular-font;
@@ -35,17 +35,38 @@ nav {
 .cart_block {
   display: flex;
   justify-content: space-between;
-  padding: 0 16px;
 
   .currency_icon {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    font-size: $regular-font-size;
+    align-items: center;
+
+    p {
+      width: 12px;
+      margin: 0 10px;
+      align-self: center;
+    }
+
+    a {
+      display: block;
+      align-self: center;
+      border-bottom: solid 1px #000000;
+      border-right: solid 1px #000000;
+      width: 4.25px;
+      height: 4.25px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
 
   }
+
   .cart_icon {
-     img {
-    width: 20px;
-    height: 20px;}
+    img {
+      width: 20px;
+      height: 20px;
+      padding: 10px 0 0 22px;
+    }
   }
 
 }

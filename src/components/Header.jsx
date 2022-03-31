@@ -27,7 +27,7 @@ class Header extends React.Component {
         <div className="cart_block">
           <div className="currency_icon">
             <p>$</p>
-            <a href="#">v</a>
+            <a href="#" className="currency_arrow"></a>
           </div>
           <div className="cart_icon">
             <a href="/cart">
