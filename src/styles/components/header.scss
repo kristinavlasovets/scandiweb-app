@@ -1,7 +1,7 @@
 @import '../variables.scss';
 
 header {
-  padding: 28px 103px 0 117px;
+  padding: 30px 105px 0px 120px;
   display: flex;
   justify-content: space-between;
   font-family: $price-regular-font;
@@ -17,6 +17,7 @@ nav {
   }
 
   li {
+    position: relative;
     display: inline-block;
   }
 
@@ -25,11 +26,30 @@ nav {
     padding: 0 16px;
     text-decoration: none;
     color: $text-color;
+    font-weight: 600; 
   }
 
-  a:hover {
+  a:after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0;
+    left: 50%;
+    margin-top: 30px;
+    background-color: $primary-color;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+
+  a:hover:after {
+    color: $primary-color;
+    width: 100%;
+    left: 0;
+  }
+  a:hover{
     color: $primary-color;
   }
+  
 }
 
 .cart_block {
