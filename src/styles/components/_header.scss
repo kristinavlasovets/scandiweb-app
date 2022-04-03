@@ -1,55 +1,50 @@
 @import '../variables.scss';
 
-header {
-  padding: 30px 105px 0px 120px;
+.header_wrapper {
+  padding-top: 30px;
   display: flex;
   justify-content: space-between;
-  font-family: $price-regular-font;
+  font-family: $regular-font;
   font-size: $header-font-size;
 }
 
 nav {
-
+  margin-left: 16px;
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
   }
 
   li {
     position: relative;
-    display: inline-block;
-  }
 
-  a {
-    display: block;
     padding: 0 16px;
     text-decoration: none;
     color: $text-color;
-    font-weight: 600; 
-  }
+    font-weight: 400;
 
-  a:after {
-    position: absolute;
-    display: block;
-    content: "";
-    height: 2px;
-    width: 0;
-    left: 50%;
-    margin-top: 30px;
-    background-color: $primary-color;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    &:after {
+      position: absolute;
+      display: block;
+      content: '';
+      height: 2px;
+      width: 0;
+      left: 50%;
+      margin-top: 30px;
+      background-color: $primary-color;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    }
+    &:hover:after {
+      color: $primary-color;
+      width: 100%;
+      left: 0;
+    }
+    &:hover {
+      color: $primary-color;
+    }
   }
-
-  a:hover:after {
-    color: $primary-color;
-    width: 100%;
-    left: 0;
-  }
-  a:hover{
-    color: $primary-color;
-  }
-  
 }
 
 .cart_block {
@@ -78,7 +73,6 @@ nav {
       transform: rotate(45deg);
       -webkit-transform: rotate(45deg);
     }
-
   }
 
   .cart_icon {
@@ -88,5 +82,4 @@ nav {
       padding: 10px 0 0 22px;
     }
   }
-
 }

@@ -1,0 +1,18 @@
+@import '../variables.scss';
+
+.home {
+  margin-top: 65px;
+
+  & > h1 {
+    font-family: $regular-font;
+    font-size: $page-heaging-size;
+    font-weight: 400;
+    margin-bottom: 85px;
+  }
+}
+
+.home_wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
