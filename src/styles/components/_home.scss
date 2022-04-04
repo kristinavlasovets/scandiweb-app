@@ -5,7 +5,7 @@
 
   & > h1 {
     font-family: $regular-font;
-    font-size: $page-heaging-size;
+    font-size: $page-heading-size;
     font-weight: 400;
     margin-bottom: 85px;
   }
@@ -15,4 +15,17 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.overlay {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(57, 55, 72, 0.22);
+  z-index: 2;
 }

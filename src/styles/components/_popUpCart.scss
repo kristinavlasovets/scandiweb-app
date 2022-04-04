@@ -1,0 +1,27 @@
+@import '../variables.scss';
+
+.popup_cart_wrapper {
+    width: 325px;
+    height: 540px;
+    max-height: 540px;
+    position: fixed;
+    top: 10%;
+    right: 3%;
+    padding: 8px 16px 20px 16px;
+    border: 1px solid $primary-color;
+    background: $white-color;
+
+    font-family: $regular-font;
+
+    z-index: 20;
+
+    .popup_cart_header {
+        display: flex;
+
+        p {
+            font-size: $header-font-size;
+        }
+
+
+    }
+}

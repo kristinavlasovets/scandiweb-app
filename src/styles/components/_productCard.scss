@@ -1,6 +1,7 @@
 @import '../variables.scss';
 
 .product_card_wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   background: $white-color;
@@ -8,18 +9,53 @@
   height: 455px;
   padding: 16px;
   margin-bottom: 100px;
+  z-index: 1;
 
   &:hover {
     box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
   }
 
+  &:hover .green_cart_icon {
+    display: block;
+  }
+
   .product_card_img {
     margin: 0 auto;
+    position: relative;
 
     img {
       display: block;
       width: 100%;
     }
+    .out_of_stock_img {
+      opacity: 0.5;
+    }
+  }
+
+  .out_of_stock_tag {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+
+    font-family: $regular-font;
+    font-size: $tag-size;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $gray-color;
+  }
+
+  .out_of_stock_text {
+    color: $gray-color;
+  }
+
+
+  .green_cart_icon {
+    position: absolute;
+    width: 55px;
+    right: 9%;
+    top: 67%;
+    display: none;
   }
 
   .product_card_description {

@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../assets/img/logo.png';
-import cart from '../assets/img/cart.png';
+import {ReactComponent as Logo} from '../assets/img/logo.svg';
+import {ReactComponent as CartIcon} from '../assets/img/cart_icon.svg';
 
 class Header extends React.Component {
   render() {
@@ -17,7 +17,7 @@ class Header extends React.Component {
             </nav>
             <div className="logo">
               <a href="/">
-                <img src={logo} alt="logo" />
+                <Logo alt="logo" className="logo_icon" />
               </a>
             </div>
             <div className="cart_block">
@@ -25,9 +25,9 @@ class Header extends React.Component {
                 <p>$</p>
                 <a href="#" className="currency_arrow"></a>
               </div>
-              <div className="cart_icon">
+              <div className="cart_icon_wrapper">
                 <a href="/cart">
-                  <img src={cart} alt="cart" />
+                  <CartIcon alt="cart" className="cart_icon"/>
                 </a>
               </div>
             </div>

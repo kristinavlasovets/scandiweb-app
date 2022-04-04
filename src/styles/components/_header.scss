@@ -1,15 +1,18 @@
 @import '../variables.scss';
 
 .header_wrapper {
+  position: relative;
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
   font-family: $regular-font;
   font-size: $header-font-size;
+  z-index:10;
 }
 
 nav {
   margin-left: 16px;
+
   ul {
     margin: 0;
     padding: 0;
@@ -36,14 +39,30 @@ nav {
       background-color: $primary-color;
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
     }
+
     &:hover:after {
       color: $primary-color;
       width: 100%;
       left: 0;
     }
+
     &:hover {
       color: $primary-color;
+      font-weight: 600;
     }
+  }
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  width: 35px;
+  height: 35px;
+
+  .logo_icon {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -75,11 +94,14 @@ nav {
     }
   }
 
-  .cart_icon {
-    img {
-      width: 20px;
-      height: 20px;
-      padding: 10px 0 0 22px;
+  .cart_icon_wrapper {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+
+    .cart_icon {
+      width: 100%;
+      height: 100%;
     }
   }
 }
