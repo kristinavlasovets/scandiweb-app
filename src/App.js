@@ -6,16 +6,15 @@ import PopUpCart from './components/PopUpCart.jsx';
 
 
 class App extends React.Component {
-    render () {
+    render() {
         return (
             <div>
                 <Header />
-                <PopUpCart />
-                <AppRouter/>
-                
+                <AppRouter />
+
             </div>
         )
-    } 
+    }
 };
 
 export default App;

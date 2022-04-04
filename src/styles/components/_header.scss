@@ -3,11 +3,12 @@
 .header_wrapper {
   position: relative;
   padding-top: 30px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
   font-family: $regular-font;
   font-size: $header-font-size;
-  z-index:10;
+  z-index: 10;
 }
 
 nav {

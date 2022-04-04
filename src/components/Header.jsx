@@ -1,6 +1,7 @@
 import React from 'react';
 import {ReactComponent as Logo} from '../assets/img/logo.svg';
 import {ReactComponent as CartIcon} from '../assets/img/cart_icon.svg';
+import PopUpCart from './PopUpCart';
 
 class Header extends React.Component {
   render() {
@@ -27,12 +28,13 @@ class Header extends React.Component {
               </div>
               <div className="cart_icon_wrapper">
                 <a href="/cart">
-                  <CartIcon alt="cart" className="cart_icon"/>
+                  <CartIcon alt="cart" className="cart_icon" />
                 </a>
               </div>
             </div>
           </div>
         </div>
+        <PopUpCart />
       </header>
     );
   }

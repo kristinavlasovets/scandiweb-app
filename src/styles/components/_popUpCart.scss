@@ -1,27 +1,114 @@
 @import '../variables.scss';
 
 .popup_cart_wrapper {
-    width: 325px;
-    height: 540px;
-    max-height: 540px;
-    position: fixed;
-    top: 10%;
-    right: 3%;
-    padding: 8px 16px 20px 16px;
-    border: 1px solid $primary-color;
-    background: $white-color;
+  width: 325px;
+  height: 540px;
+  max-height: 540px;
+  position: absolute;
+  right: 4.5%;
 
-    font-family: $regular-font;
+  padding: 8px 16px 20px 16px;
+  border: 1px solid $primary-color;
+  background: $white-color;
 
-    z-index: 20;
+  font-family: $regular-font;
 
-    .popup_cart_header {
-        display: flex;
+  z-index: 20;
 
-        p {
-            font-size: $header-font-size;
-        }
+  .popup_cart_header {
+    display: flex;
 
-
+    p {
+      font-size: $header-font-size;
+      font-weight: 500;
+      & span {
+        font-weight: 700;
+      }
     }
+  }
+
+  .popup_cart_product_block {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    .popup_cart_product_decription {
+      width: 135px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: $text-color;
+
+      p {
+        font-size: $header-font-size;
+        font-weight: 300;
+        line-height: 26px;
+
+        & span {
+          font-weight: 500;
+        }
+      }
+
+      .popup_cart_product_size_button_block {
+        width: 56px;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+          width: 24px;
+          height: 24px;
+
+          font-family: $item-size-font;
+          font-size: $item-size-size;
+          color: $text-color;
+
+          border: 1px solid $text-color;
+          background: $white-color;
+
+          &.disabled_size_button {
+            color: $lightgray-color;
+
+            border: 1px solid $lightgray-color;
+            background: rgba(166, 166, 166, 0.2);
+          }
+        }
+      }
+    }
+
+    .popup_cart_product_quantity_block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: $text-color;
+      align-items: center;
+
+      font-family: $regular-font;
+      color: $text-color;
+      line-height: 160%;
+
+      button {
+        width: 24px;
+        height: 24px;
+
+        font-weight: 300;
+        font-size: $regular-font-size;
+
+        border: 1px solid $text-color;
+        background: $white-color;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: $header-font-size;
+      }
+    }
+
+    .popup_cart_product_img_wrapper {
+      img {
+        display: block;
+      }
+    }
+  }
 }
