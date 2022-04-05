@@ -5,7 +5,9 @@ class Home extends React.Component {
   render() {
     return (
       <div className="container">
+        
         <div className="home">
+        <div className="overlay"></div>
           <h1>Category name</h1>
           <div className="home_wrapper">
             <ProductCard />

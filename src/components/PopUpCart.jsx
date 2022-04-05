@@ -7,10 +7,7 @@ class PopUpCart extends React.Component {
       <div className="container">
         <div className="popup_cart_wrapper">
           <div className="popup_cart_header">
-            <p>
-              <span>My Bag,</span>
-            </p>
-            <p>2 items</p>
+            <p><span>My Bag,</span> 2 items</p>
           </div>
           <div className="popup_cart_product_block">
             <div className="popup_cart_product_decription">
@@ -59,6 +56,14 @@ class PopUpCart extends React.Component {
                 className="popup_cart_product_img"
               />
             </div>
+          </div>
+          <div className="popup_cart_product_total">
+            <p>Total</p>
+            <p>$100.00</p>
+          </div>
+          <div className="popup_cart_product_footer">
+            <button>View bag</button>
+            <button>Check out</button>
           </div>
         </div>
       </div>

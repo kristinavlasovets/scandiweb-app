@@ -5,13 +5,13 @@
   height: 540px;
   max-height: 540px;
   position: absolute;
-  right: 4.5%;
-
+  right: 3.5%;
+  top: 80px;
   padding: 8px 16px 20px 16px;
-  border: 1px solid $primary-color;
-  background: $white-color;
 
+  background: $white-color;
   font-family: $regular-font;
+  color: $text-color;
 
   z-index: 20;
 
@@ -21,6 +21,7 @@
     p {
       font-size: $header-font-size;
       font-weight: 500;
+
       & span {
         font-weight: 700;
       }
@@ -39,7 +40,6 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      color: $text-color;
 
       p {
         font-size: $header-font-size;
@@ -62,7 +62,6 @@
 
           font-family: $item-size-font;
           font-size: $item-size-size;
-          color: $text-color;
 
           border: 1px solid $text-color;
           background: $white-color;
@@ -81,7 +80,6 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      color: $text-color;
       align-items: center;
 
       font-family: $regular-font;
@@ -109,6 +107,55 @@
       img {
         display: block;
       }
+    }
+  }
+
+  .popup_cart_product_total {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 700;
+    line-height: 26px;
+    align-items: center;
+    margin-bottom: 40px;
+
+    :nth-child(1) {
+      font-family: $description-font;
+      font-size: $header-font-size;
+      font-weight: 500;
+      line-height: 18px;
+    }
+  }
+
+  .popup_cart_product_footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      position: static;
+      left: 0px;
+      top: 0px;
+      width: 140px;
+      height: 43px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: $item-size-size;
+      font-family: $regular-font;
+      font-weight: 600;
+      line-height: 17px;
+    }
+
+    :nth-child(1) {
+      border: 1px solid $text-color;
+      background: $white-color;
+    }
+
+    :nth-child(2) {
+      border: 1px solid $primary-color;
+      background: $primary-color;
+      color: $white-color;
     }
   }
 }
