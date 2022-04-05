@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Home from '../pages/Home';
 import Cart from '../pages/Cart';
-import ItemCard from '../pages/ItemCard';
+import ProductPage from '../pages/ProductPage';
 import {Route, Routes} from 'react-router-dom';
 
 export default class AppRouter extends Component {
@@ -15,8 +15,8 @@ export default class AppRouter extends Component {
       element: Cart,
     },
     {
-      path: '/itemcard',
-      element: ItemCard,
+      path: '/productPage',
+      element: ProductPage,
     },
     {
       path: '/*',

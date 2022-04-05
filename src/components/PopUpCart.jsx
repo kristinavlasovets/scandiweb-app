@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './Button';
 import productD from '../assets/img/productD.png';
 
 class PopUpCart extends React.Component {
@@ -62,8 +63,8 @@ class PopUpCart extends React.Component {
             <p>$100.00</p>
           </div>
           <div className="popup_cart_product_footer">
-            <button>View bag</button>
-            <button>Check out</button>
+            <Button className="view_bag_button" variant="primary" />
+            <Button />
           </div>
         </div>
       </div>

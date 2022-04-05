@@ -1,15 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
 
 $primary-color: #5ece7b;
 $text-color: #1d1f22;
 $white-color: #ffffff;
 $gray-color: #8d8f9a;
 $lightgray-color: #a6a6a6;
+$product-size-color: #292929;
+
 $regular-font: 'Raleway', sans-serif;
 $description-font: 'Roboto', sans-serif;
+$product-page-subtitle-font: 'Roboto Condensed', sans-serif;
 $item-size-font: 'Source Sans Pro', sans-serif;
+
 $item-size-size: 14px;
 $header-font-size: 16px;
 $regular-font-size: 18px;
 $tag-size: 24px;
+$product-title-size: 30px;
 $page-heading-size: 42px;

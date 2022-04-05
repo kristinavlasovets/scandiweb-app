@@ -1,0 +1,144 @@
+@import '../variables.scss';
+
+.product_page {
+    margin-top: 35px;
+    width: 1135px;
+    display: flex;
+    flex-direction: row;
+
+    .product_page_carousel {
+        margin: 50px 15px 0px 15px;
+        height: 305px;
+        width: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .product_page_carousel_img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .product_page_card {
+        width: 1027px;
+        height: 560px;
+        display: flex;
+        padding: 48px 0px 0px 25px;
+
+        margin-bottom: 72px;
+
+        .product_page_img_wrapper {
+            width: 610px;
+            height: 511px;
+
+            .product_page_img {
+                display: block;
+                width: 100%;
+                overflow: auto;
+            }
+        }
+
+        .product_page_info {
+            width: 292px;
+            margin-left: 100px;
+            display: flex;
+            flex-direction: column;
+            color: $text-color;
+
+            .product_page_title {
+                margin-bottom: 43px;
+
+                p {
+                    font-family: $regular-font;
+                    font-size: $product-title-size;
+                    font-weight: 400;
+                    line-height: 27px;
+                }
+
+                :nth-child(1) {
+                    font-weight: 600;
+                    margin-bottom: 16px;
+                }
+            }
+
+            .product_page_size_wrapper {
+                margin-bottom: 40px;
+
+                p {
+                    font-family: $product-page-subtitle-font;
+                    font-size: $regular-font-size;
+                    font-weight: 700;
+                    line-height: 18px;
+                    text-transform: uppercase;
+                    margin-bottom: 8px;
+                }
+
+                ul {
+                    width: 290px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        box-sizing: border-box;
+                        letter-spacing: 0.05em;
+                        width: 63px;
+                        height: 45px;
+
+                        font-family: $item-size-font;
+                        font-size: $header-font-size;
+                        line-height: 18px;
+
+                        list-style-type: none;
+                        border: 1px solid $text-color;
+                        background: $white-color;
+                        color: $product-size-color;
+
+                        &.disabled_size_button {
+                            color: $lightgray-color;
+                            border: 1px solid $lightgray-color;
+                        }
+                        &.chosen_size_button {
+                            color: $white-color;
+                            background: $text-color;
+                            border: 1px solid $text-color;
+                        }
+                    }
+                }
+
+            }
+
+
+            .product_page_price {
+                margin-bottom: 20px;
+
+                p {
+                    font-family: $product-page-subtitle-font;
+                    font-size: $regular-font-size;
+                    font-weight: 700;
+                    line-height: 18px;
+                    text-transform: uppercase;
+                    margin-bottom: 8px;
+                }
+
+                :nth-child(2) {
+                    font-family: $regular-font;
+                    font-size: $tag-size;
+                    line-height: 18px;
+                }
+            }
+
+            .product_page_decscription {
+                margin-top: 40px;
+                font-family: $description-font;
+                font-size: $header-font-size;
+                line-height: 26px;
+            }
+
+        }
+    }
+
+}

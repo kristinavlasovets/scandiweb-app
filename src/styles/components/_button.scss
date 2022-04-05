@@ -1,0 +1,26 @@
+@import '../variables.scss';
+
+.button {
+    position: static;
+    left: 0px;
+    top: 0px;
+    width: 140px;
+    height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $item-size-size;
+    font-family: $regular-font;
+    font-weight: 600;
+    line-height: 17px;
+
+    .view_bag_button {
+        border: 1px solid $text-color;
+        background: $white-color;
+    }
+
+    .check_out_button {
+        border: 1px solid $primary-color;
+        background: $primary-color;
+        color: $white-color;
+    }
+}

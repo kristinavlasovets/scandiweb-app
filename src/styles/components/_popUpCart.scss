@@ -1,6 +1,10 @@
 @import '../variables.scss';
 
 .popup_cart_wrapper {
+  // POPUP
+  display: none;
+
+  
   width: 325px;
   height: 540px;
   max-height: 540px;
@@ -132,30 +136,5 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-
-    button {
-      position: static;
-      left: 0px;
-      top: 0px;
-      width: 140px;
-      height: 43px;
-      text-align: center;
-      text-transform: uppercase;
-      font-size: $item-size-size;
-      font-family: $regular-font;
-      font-weight: 600;
-      line-height: 17px;
-    }
-
-    :nth-child(1) {
-      border: 1px solid $text-color;
-      background: $white-color;
-    }
-
-    :nth-child(2) {
-      border: 1px solid $primary-color;
-      background: $primary-color;
-      color: $white-color;
-    }
   }
 }
