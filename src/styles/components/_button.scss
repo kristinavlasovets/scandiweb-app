@@ -13,14 +13,24 @@
     font-weight: 600;
     line-height: 17px;
 
-    .view_bag_button {
+    &--view_bag_button {
         border: 1px solid $text-color;
         background: $white-color;
     }
 
-    .check_out_button {
+    &--check_out_button {
         border: 1px solid $primary-color;
         background: $primary-color;
         color: $white-color;
+    }
+
+    &--add_to_cart_button {
+        width: 292px;
+        height: 52px;
+        border: 1px solid $primary-color;
+        background: $primary-color;
+        color: $white-color;
+        font-size: $header-font-size;
+        line-height: 19px;
     }
 }

@@ -63,8 +63,9 @@ class PopUpCart extends React.Component {
             <p>$100.00</p>
           </div>
           <div className="popup_cart_product_footer">
-            <Button className="view_bag_button" variant="primary" />
-            <Button />
+            <Button toPath="/cart" btnClass="button--view_bag_button" btnText="View bag"/>
+            <Button toPath="/cart" btnClass="button--check_out_button" btnText="Check out"/>
+            
           </div>
         </div>
       </div>

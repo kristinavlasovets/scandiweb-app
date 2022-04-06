@@ -2,7 +2,7 @@
 
 .product_page {
     margin-top: 35px;
-    width: 1135px;
+    width: 100%;
     display: flex;
     flex-direction: row;
 
@@ -113,6 +113,7 @@
 
 
             .product_page_price {
+                margin-top: 20px;
                 margin-bottom: 20px;
 
                 p {

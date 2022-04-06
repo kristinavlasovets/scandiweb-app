@@ -9,6 +9,7 @@ class ProductPage extends React.Component {
       <div className="container">
         
         <div className="product_page">
+        <div className="overlay"></div>
           
            
            <div className="product_page_carousel">
@@ -38,12 +39,12 @@ class ProductPage extends React.Component {
                  </ul>
                </div>
 
+               <Button toPath="/cart" btnClass="button button--add_to_cart_button" btnText="Add to cart"/>
+
                <div className="product_page_price">
                  <p>price</p>
                  <p>$50.00</p>
                </div>
-
-               {/* <Button toPath="#" btnClass="button check_out_button" btnText="add to cart"/> */}
 
                <div className="product_page_decscription">
                  <p>Find stunning women's cocktail dresses and party dresses. Stand out in lace and metallic cocktail dresses and party dresses from all your favorite brands.</p>
