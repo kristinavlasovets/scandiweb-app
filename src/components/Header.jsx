@@ -2,6 +2,7 @@ import React from 'react';
 import {ReactComponent as Logo} from '../assets/img/logo.svg';
 import {ReactComponent as CartIcon} from '../assets/img/cart_icon.svg';
 import PopUpCart from './PopUpCart';
+import PopUpCurrency from './PopUpCurrency';
 
 class Header extends React.Component {
   render() {
@@ -35,6 +36,7 @@ class Header extends React.Component {
           </div>
         </div>
         <PopUpCart />
+        <PopUpCurrency/>
       </header>
     );
   }

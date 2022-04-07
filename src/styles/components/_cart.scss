@@ -135,8 +135,42 @@
             }
 
             .cart_page_img_wrapper {
+                position: relative;
                 width: 141px;
                 height: 186px;
+
+                .arrow {
+                    position: absolute;
+                    border: solid $white-color;
+                    border-width: 0 3px 3px 0;
+                    border-radius: 1px;
+                    display: none;
+                    padding: 4.5px;
+                    cursor: pointer;
+
+                    transition: all 200ms ease;
+
+                    &.right {
+                        top: 48%;
+                        right: 8%;
+                        transform: rotate(-45deg);
+                    }
+
+                    &.left {
+                        top: 48%;
+                        left: 8%;
+                        transform: rotate(135deg);
+                    }
+
+                    &:hover {
+                        border-color: $primary-color;
+                        box-shadow: 3px 3px $white-color;
+                    }
+                }
+
+                &:hover .arrow {
+                    display: inline-block;
+                }
 
                 .cart_page_img {
                     display: block;

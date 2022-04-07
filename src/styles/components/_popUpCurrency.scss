@@ -1,0 +1,32 @@
+@import '../variables.scss';
+
+
+.popup_currency_wrapper {
+    width: 114px;
+    height: 169px;
+    max-height: 169px;
+    position: absolute;
+    right: 3.5%;
+    top: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background: $white-color;
+    font-family: $regular-font;
+    font-weight: 500;
+    font-size: $regular-font-size;
+    color: $text-color;
+
+    z-index: 21;
+
+    .popup_currency_line {
+        display: flex;
+        margin: 20px 0 0px 20px;
+
+        p {
+            line-height: 29px;
+            padding-right: 5px;
+        }
+    }
+}

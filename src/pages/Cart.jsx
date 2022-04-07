@@ -1,13 +1,13 @@
 import React from "react";
-import productE from '../assets/img/productE.png';
+import productE from "../assets/img/productE.png";
 
 class Cart extends React.Component {
-  visible = true
+  visible = true;
   render() {
     return (
       <div className="container">
         <div className="cart_page">
-        {this.visible && <div className="overlay"></div>}
+          {/* {this.visible && <div className="overlay"></div>} */}
           <div className="cart_page_header">
             <p>Cart</p>
           </div>
@@ -41,11 +41,12 @@ class Cart extends React.Component {
               </div>
 
               <div className="cart_page_img_wrapper">
-                <img src={ productE } alt="product" className="cart_page_img"/>
+                <i class="arrow left"></i>
+                <i class="arrow right"></i>
+                <img src={productE} alt="product" className="cart_page_img" />
               </div>
             </div>
           </div>
-
 
           <div className="cart_page_line"></div>
 
@@ -76,7 +77,9 @@ class Cart extends React.Component {
               </div>
 
               <div className="cart_page_img_wrapper">
-                <img src={ productE } alt="product" className="cart_page_img"/>
+                <i class="arrow left"></i>
+                <i class="arrow right"></i>
+                <img src={productE} alt="product" className="cart_page_img" />
               </div>
             </div>
           </div>
