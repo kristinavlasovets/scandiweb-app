@@ -5,6 +5,7 @@ import AppRouter from './components/AppRouter.jsx';
 import PopUpCart from './components/PopUpCart.jsx';
 
 
+
 class App extends React.Component {
     render() {
         return (

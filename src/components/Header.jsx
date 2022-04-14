@@ -3,8 +3,29 @@ import {ReactComponent as Logo} from '../assets/img/logo.svg';
 import {ReactComponent as CartIcon} from '../assets/img/cart_icon.svg';
 import PopUpCart from './PopUpCart';
 import PopUpCurrency from './PopUpCurrency';
+import { client } from '../index';
+import {GET_CATEGORIES} from '../query/categories'
+
 
 class Header extends React.Component {
+  state = {
+    categories: [],
+  };
+
+  async categories() {
+    const response = await client.query({
+      query: GET_CATEGORIES,
+    });
+    this.setState({
+      categories: response.data.categories
+    })
+  }
+  
+  componentDidMount() {
+    this.categories();
+  }
+
+  // categories = ['All', 'Tech', 'Clothes']
   render() {
     return (
       <header>
@@ -12,9 +33,9 @@ class Header extends React.Component {
           <div className="header_wrapper">
             <nav>
               <ul>
-                <li>WOMEN</li>
-                <li>MEN</li>
-                <li>KIDS</li>
+                {this.state.categories.map((item, index) => (
+                  <li key={`${item.name}_${index}`}>{item.name}</li>
+                ))}
               </ul>
             </nav>
             <div className="logo">
@@ -36,7 +57,7 @@ class Header extends React.Component {
           </div>
         </div>
         <PopUpCart />
-        <PopUpCurrency/>
+        <PopUpCurrency />
       </header>
     );
   }
